@@ -16,3 +16,13 @@ def deps do
 end
 ```
 
+## Running the app standalone
+
+You can run the app using the following command
+
+`iex -S mix run`
+
+and then for example using:
+
+`Dictionary.WordList.random_word`
+
