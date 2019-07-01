@@ -16,4 +16,9 @@ defmodule Dictionary.WordList do
   def random_word() do
     Agent.get(@me, &Enum.random/1)
   end
+
+  def random_words(n_words \\ 1) do
+    Agent.get(@me, & &1)
+    |> Enum.take_random(n_words)
+  end
 end
